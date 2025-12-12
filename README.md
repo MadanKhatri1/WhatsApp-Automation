@@ -26,11 +26,6 @@ A powerful and intelligent **WhatsApp Web automation toolkit** built with Python
 - **Safe Search Method**: Clears previous chats using ESC key to prevent wrong-recipient errors
 - **Graceful Fallback**: Continues operation even if individual contacts fail
 
-### 👥 Group Management
-- **Automated Group Creation**: Create WhatsApp groups programmatically
-- **Batch Member Addition**: Add multiple contacts to groups automatically
-- **Custom Group Names**: Set group names during creation
-
 ### 💾 Session Persistence
 - **QR Code Once**: Scan QR code only on first run
 - **Session Retention**: Stores WhatsApp Web session for repeated use
