@@ -4,7 +4,7 @@
 ![Selenium](https://img.shields.io/badge/Selenium-WebDriver-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-A powerful and intelligent **WhatsApp Web automation toolkit** built with Python and Selenium WebDriver. This project enables bulk messaging, automated group creation, and contact management with advanced features like session persistence, progress tracking, and error recovery.
+A powerful and intelligent **WhatsApp Web automation toolkit** built with Python and Selenium WebDriver. This project enables bulk messaging with advanced features like session persistence, progress tracking, and error recovery.
 
 ## ✨ Key Features
 
