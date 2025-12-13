@@ -329,8 +329,7 @@ def send_whatsapp_from_pdf(pdf_file, message, image_folder=None, start_index=0, 
 
 if __name__ == "__main__":
     pdf_file = "contacts.pdf"
-    message = """कल्पना वाईबा 
-महाधिवेशन  प्रतिनिधि - युवा विद्यार्थी"""   
+    message = """"""   
     image_folder = "images/"
     
     send_whatsapp_from_pdf(
