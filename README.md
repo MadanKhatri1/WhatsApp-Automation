@@ -112,6 +112,7 @@ images/
 ```bash
 python main.py
 ```
+If the code gives errors, it’s likely that the class names of the div elements have changed, since WhatsApp frequently updates them. To fix this, go to WhatsApp, right-click → Inspect, copy the XPath of the element, and paste it into the code.
 
 #### First-time Setup:
 1. A Chrome window will open with WhatsApp Web
