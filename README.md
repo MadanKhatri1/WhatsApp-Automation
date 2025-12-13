@@ -64,13 +64,14 @@ cd WhatsApp-Automation
 ### Step 2: Install Dependencies
 
 ```bash
-pip install selenium pandas PyPDF2
+pip install selenium pandas PyPDF2 fpdf
 ```
 
 **Required Python packages:**
 - `selenium` - Web automation framework
 - `pandas` - Data manipulation (optional, for advanced contact management)
 - `PyPDF2` - PDF parsing for contact extraction
+- `fpdf` - PDF generation for creating sample contact lists
 
 
 ## 🚀 Quick Start
@@ -163,12 +164,19 @@ send_whatsapp_from_pdf(
 ### Create WhatsApp Group
 
 ```python
-# Edit create_group.py with your details
-GROUP_NAME = "My Automated Group"
-MEMBERS = ["Friend1", "Friend2", "Friend3"]  # Contact names
+# Edit group_creation.py with your details
+GROUP_NAME_PREFIX = "Community Update Group"
+MESSAGE_TO_SEND = "Welcome!"
 
 # Run the script
-python create_group.py
+python group_creation.py
+```
+
+### Generate Sample Contacts PDF
+
+```python
+# Run the script to create a sample contact.pdf
+python create_pdf.py
 ```
 
 ## 📁 Project Structure
@@ -176,9 +184,10 @@ python create_group.py
 ```
 WhatsApp-Automation/
 ├── main.py                    # Main bulk messaging script
-├── create_group.py            # Group creation automation
-├── test.py                    # Session testing utility
-├── contacts.pdf               # Contact list (your data)
+├── group_creation.py          # Group creation automation
+├── create_pdf.py              # Helper to generate sample PDF contacts
+├── contact.pdf                # Generated contact list
+├── contacts.pdf               # Contact list input (your data)
 ├── images/                    # Images to send
 │   ├── image_1.jpg
 │   └── image_2.jpg
@@ -399,7 +408,7 @@ print(f"File exists: {os.path.exists(image_path)}")
 ### 1. Respect WhatsApp's Limits
 
 - **Don't spam**: Add delays between messages (configured at 2-4 seconds)
-- **Avoid bulk at once**: Send to max 50-100 contacts per session
+- **Avoid bulk at once**: Send to max 50-100 contacts per session. The script automatically pauses for 1 hour after 100 messages to prevent bans.
 - **Monitor for blocks**: WhatsApp may temporarily block your number for suspicious activity
 
 ### 2. Test First
